@@ -1,0 +1,54 @@
+
+#about h5,h2{
+    text-align: center;
+}
+
+.about_container{
+    display: grid;
+    grid-template-columns: 25% 50%;
+    gap: 15%;
+}
+.about_me{
+    width:100%;
+    border-radius:2rem;
+    background: linear-gradient(45deg,transparent,var(--color-primary),transparent);
+    display: grid;
+    place-items: center;
+}
+.about_me_image{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: .4s;
+}
+.about_me_image:hover{
+    transform: rotate(0);
+}
+.about_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+.about_card{
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2rem;
+    line-height: 1.8;
+    transition: .3s;
+}
+.about_card:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor:default;
+}
+.icon{
+    color:var(--color-primary);
+    font-size: 1.5rem;
+}
+.about_content p{
+    margin: 2rem 0 2.5rem;
+    color: var(--color-light);
+
+}
